@@ -19,6 +19,7 @@ This repository contains the prototype Arduino sketch, wiring notes, and documen
 The system measures the number of cars on two intersecting roads (A and B) during each cycle, and uses those counts to compute how long the green light should stay open for each road. After each 120-second cycle the counts are re-evaluated.
 
 The formula used to compute the green time for Road A (in seconds) is:
+
 **t(x) = ( x / (x + y + 0.01) ) * 60 + 30** 
 
 Where:
