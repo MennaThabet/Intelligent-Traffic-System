@@ -1,20 +1,20 @@
 # Intelligent-Traffic-System
-An Arduino-based intelligent traffic management system that dynamically allocates green-light time to reduce congestionand road injuries by real-time vehicle counting and give immediate priority to emergency vehicles.  
+An Arduino-based intelligent traffic management system that dynamically allocates green-light time to reduce congestion and road injuries by real-time vehicle counting and give immediate priority to emergency vehicles.  
 This repository contains the prototype Arduino sketch, wiring notes, and documentation.
 
 ---
 
 ## Table of Contents
-- [Project idea & formula](#project-idea--formula)
+- [Project Idea](#project-idea)
 - [Features](#features)
 - [Hardware Used](#hardware-used)
 - [How to run](#how-to-run)
-- [Future improvements (push-button alternatives)](#future-improvements-push-button-alternatives)
+- [Future Improvements](#future-improvements)
 - [Awards](#awards)
 
 ---
 
-## Project idea & formula
+## Project Idea
 
 The system measures the number of cars on two intersecting roads (A and B) during each cycle, and uses those counts to compute how long the green light should stay open for each road. After each 120-second cycle the counts are re-evaluated.
 
@@ -66,7 +66,7 @@ This keeps a guaranteed minimum for each direction while letting heavier traffic
 
 ---
 
-## Future improvements — **(Push-button alternatives & considerations)**
+## Future Improvements 
 
 The push button in the prototype is a **manual simulator** for emergency-priority logic. It is fine for demos, but **not recommended for real-world deployment**.
 Below are safer, automatic alternatives with short pros/cons:
